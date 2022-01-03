@@ -4,12 +4,14 @@ class singlyList{
         // ~singlyList();
         void addFront(int number);
         int deleteFront();
+        void print();
     private:
         struct node{
-            int data = 0;
-            int* next;
+            int data;
+            node* next;
         };
 
+        int count;
         node* head;
         
 

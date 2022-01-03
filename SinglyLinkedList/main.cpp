@@ -5,11 +5,13 @@ using namespace std;
 
 int main(int argc, char** argv){
     
-    cout<<"Hello Andrew"<<endl;
-
     singlyList newlist;
 
     newlist.addFront(5);
+    newlist.addFront(6);
+    newlist.addFront(9);
+    int number = newlist.deleteFront();
+    newlist.print();
 
     return 0;
 }
